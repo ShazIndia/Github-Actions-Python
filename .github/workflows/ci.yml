@@ -24,4 +24,4 @@ jobs:
 
       # Run the Python script
       ##- name: Run hello.py script
-        run: python hello.py
+       # run: python hello.py
