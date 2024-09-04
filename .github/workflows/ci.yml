@@ -1,1 +1,27 @@
-Push 
+# .github/workflows/ci.yml
+
+name: Python Sum Addition
+
+# Controls when the action will run
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Define the jobs that will run
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+
+      # Run the Python script
+      ##- name: Run hello.py script
+        run: python hello.py
